@@ -18,7 +18,7 @@ export default function Home() {
       <section className="w-full ">
         <div className="flex md:flex-row flex-col max-md:items-center space-x-2">
           {/* left content  */}
-          <div className="w-[70%] p-10">
+          <div className=" w-[100%] p-10">
             <div className="space-y-4 flex flex-col">
               <div className="flex flex-col lg:flex-row justify-between lg:items-center space-y-3 lg:space-y-0">
                 <div>
@@ -29,7 +29,7 @@ export default function Home() {
                 <div className="bg-white p-3 rounded-3xl md:hidden">
                   <UserProfile/>
                 </div>
-                <div className="relative w-[90%] lg:w-60 bg-white rounded-3xl">
+                <div className="relative max-w-[90%] lg:w-60 bg-white rounded-3xl shadow-sm">
                   <input
                     type="text"
                     placeholder="search here..."
@@ -45,7 +45,7 @@ export default function Home() {
 
               {/* main content  */}
 
-              <div className="bg-white rounded-3xl shadow-[-3px_3px_25px_-8px_rgba(0,_0,_0,_0.1)] p-6 flex flex-col space-y-4 justify-between lg:flex-row lg:flex-wrap lg:space-y-0">
+              <div className="bg-white rounded-3xl shadow-sm p-6 flex flex-col space-y-4 justify-between lg:flex-row lg:flex-wrap lg:space-y-0 ">
                 {/* icons  */}
                 <div className="flex space-x-4 items-center">
                   <div className="bg-[#4d44b5] w-12 h-12 rounded-full flex justify-center items-center">
@@ -144,7 +144,7 @@ export default function Home() {
           </div>
 
           {/* right bar  */}
-          <div className="bg-white lg:w-[30%] shadow-xl lg:shadow-none px-4 py-8 rounded-3xl md:rounded-none space-y-6 flex flex-col w-[60%]">
+          <div className="bg-white lg:w-[30%] shadow-xl lg:shadow-none px-4 py-8 rounded-3xl md:rounded-none space-y-6 flex flex-col w-[80%]">
           <div className="p-2 hidden md:block">
             <UserProfile/>
           </div>

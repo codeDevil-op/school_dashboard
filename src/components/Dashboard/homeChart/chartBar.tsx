@@ -98,7 +98,7 @@ const CardBarChart: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative h-[450px] flex flex-col break-words bg-white shadow-xl rounded-3xl p-2 xl:w-[340px] max-w-full">
+    <div className="relative h-[450px] flex flex-col break-words bg-white shadow-xl rounded-3xl p-2 xl:w-[370px] max-w-full">
       <div className="rounded-t mb-0 p-4 bg-transparent">
         <div className="flex flex-wrap items-center">
           <div className="relative w-full max-w-full flex-grow flex-1">

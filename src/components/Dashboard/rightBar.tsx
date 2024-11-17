@@ -96,7 +96,7 @@ const RightBar = () => {
                 <div className='flex justify-between items-center px-3 md:px-2 mt-6'>
                     <h1 className='text-xl font-semibold text-[#303972]'>Messages</h1>
                 </div>
-                <div className='flex justify-between px-2'>
+                <div className='flex justify-between'>
                     <div className='flex space-x-2 items-center'>
                         <div className='w-10 h-10 bg-gray-400 rounded-full'></div>
                         <div>
@@ -109,7 +109,7 @@ const RightBar = () => {
                         </div>
                 </div>
                 <div className='border'></div>
-                <div className='flex justify-between px-2'>
+                <div className='flex justify-between'>
                     <div className='flex space-x-2 items-center'>
                         <div className='w-10 h-10 bg-gray-400 rounded-full'></div>
                         <div>
@@ -122,7 +122,7 @@ const RightBar = () => {
                         </div>
                 </div>
                 <div className='border'></div>
-                <div className='flex justify-between px-2'>
+                <div className='flex justify-between '>
                     <div className='flex space-x-2 items-center'>
                         <div className='w-10 h-10 bg-gray-400 rounded-full'></div>
                         <div>
@@ -135,7 +135,7 @@ const RightBar = () => {
                         </div>
                 </div>
                 <div className='border'></div>
-                <div className='flex justify-between px-2'>
+                <div className='flex justify-between '>
                     <div className='flex space-x-2 items-center'>
                         <div className='w-10 h-10 bg-gray-400 rounded-full'></div>
                         <div>
