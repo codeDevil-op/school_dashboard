@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
-import profileImg from '../../../public/logo.png'
 import { FiPrinter } from 'react-icons/fi'
 import {studentData} from './studentData'
 import Pagination from '../Pagination/pagination'
@@ -8,8 +7,8 @@ const UnpaidStudents = () => {
 
     // pagination states 
     const [currentPage,setCurrentPage] = useState(1)
-    const [studentsPerPage,setStudentsPerPage] = useState(5);
-
+    // const [studentsPerPage,setStudentsPerPage] = useState(5);
+    const studentsPerPage = 5
     // get students data perpage 
     const indexOfLastStudent = currentPage * studentsPerPage;
     const indexOfFirstStudent = indexOfLastStudent - studentsPerPage
@@ -72,8 +71,6 @@ const UnpaidStudents = () => {
         <Pagination 
         currentPage = {currentPage}
         setCurrentPage = {setCurrentPage}
-        studentsPerPage = {studentsPerPage}
-        allStudents = {allStudents}
         pageNumbers = {pageNumbers}
         />
     </div>

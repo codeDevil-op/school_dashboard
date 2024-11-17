@@ -4,12 +4,10 @@ import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io';
 interface paginationType  {
     currentPage:number,
     setCurrentPage: (page: number) => void;
-    studentsPerPage:number,
-    allStudents:Array<any>,
     pageNumbers:Array<number>,
 }
 
-const Pagination: React.FC<paginationType> = ({currentPage,setCurrentPage,studentsPerPage,allStudents,pageNumbers}) => {
+const Pagination: React.FC<paginationType> = ({currentPage,setCurrentPage,pageNumbers}) => {
 
     const [pageNumberLimit, setPageNumberLimit] = useState(3);
     const [maxPageNumberLimit, setMaxPageNumberLimit] = useState(3);

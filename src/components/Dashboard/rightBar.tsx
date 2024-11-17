@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import React from 'react'
 import { TfiEmail } from 'react-icons/tfi'
-import pImg from '../../../public/icons/Student.png'
 const RightBar = () => {
   return (
     <div>

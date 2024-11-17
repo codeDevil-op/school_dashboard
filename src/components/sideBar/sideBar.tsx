@@ -1,9 +1,9 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import logo from '../../../public/logo.svg'
 import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import {sideBarData} from '../sideBar/sideBarData'
 import { GoSidebarCollapse, GoSidebarExpand } from 'react-icons/go'
 

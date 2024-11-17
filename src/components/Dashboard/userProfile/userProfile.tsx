@@ -1,8 +1,7 @@
-import Image from 'next/image'
+
 import React from 'react'
 import { IoIosNotificationsOutline } from 'react-icons/io'
 import { IoSettingsOutline } from 'react-icons/io5'
-import userProfile from '../../../../public/icons/Student.png'
 
 const UserProfile = () => {
   return (

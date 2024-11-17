@@ -2,8 +2,6 @@ import dayjs from "dayjs";
 import React, { useState } from "react";
 import { generateDate, months } from "../../../utils/calendar";
 import cn from "../../../utils/cn";
-import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-import { FaCaretDown } from "react-icons/fa";
 
 export default function Calendar() {
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
