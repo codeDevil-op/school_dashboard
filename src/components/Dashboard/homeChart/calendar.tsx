@@ -22,7 +22,7 @@ export default function Calendar() {
     }
   };
   return (
-    <div className="xl:w-[370px] shadow-xl rounded-3xl bg-white p-4">
+    <div className="xl:w-[340] shadow-xl rounded-3xl bg-white p-4">
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-bold text-[#303972]">School Calendar</h1>
         <div>

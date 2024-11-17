@@ -18,7 +18,7 @@ export default function Home() {
       <section className="w-full ">
         <div className="flex md:flex-row flex-col max-md:items-center space-x-2">
           {/* left content  */}
-          <div className=" w-[100%] p-10">
+          <div className=" w-[100%] md:w-[70%] p-10">
             <div className="space-y-4 flex flex-col">
               <div className="flex flex-col lg:flex-row justify-between lg:items-center space-y-3 lg:space-y-0">
                 <div>
