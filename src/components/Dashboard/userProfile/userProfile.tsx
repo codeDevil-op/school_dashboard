@@ -1,22 +1,19 @@
 
+import Image from 'next/image'
 import React from 'react'
-import { IoIosNotificationsOutline } from 'react-icons/io'
-import { IoSettingsOutline } from 'react-icons/io5'
+import notfication from '../../../../public/icons/notification.png'
+import setting from '../../../../public/icons/setting.png'
+
 
 const UserProfile = () => {
   return (
     <div className='flex justify-between max-md:justify-evenly items-center w-60'>
-        <div className='relative'>
-        <div className="h-2 w-2 rounded-full bg-[#4D44B5] absolute right-2"></div> 
-        <IoIosNotificationsOutline size={20} color='#a098ae' className='w-10 h-10 rounded-full cursor-pointer bg-white shadow-sm p-1'
-        style={{ stroke: 'black', strokeWidth: '5' }}
-        />
+        <div className='relative flex justify-center items-center rounded-full p-2 bg-white w-11 h-11'>
+        <div className="h-2 w-2 rounded-full bg-[#4D44B5] absolute right-2 top-[2px]"></div> 
+        <Image src={notfication} alt=''/>
         </div>
-        <div>
-        <IoSettingsOutline 
-        className='w-10 h-10 rounded-full cursor-pointer bg-white shadow-sm p-1'
-        size={22} color='#a098ae'
-        style={{ stroke: '#a098ae', strokeWidth: '5' }}/>
+        <div className='relative flex justify-center items-center rounded-full p-2 bg-white w-11 h-11'>
+        <Image src={setting} alt=''/>
         </div>
         <div className='flex items-center space-x-3'>
             <div>

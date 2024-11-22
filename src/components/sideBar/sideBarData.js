@@ -24,7 +24,7 @@ export const sideBarData = [
         id:3,
         barData: 'Teachers',
         img:Teacher,
-        href:'/teachers'
+        href:'/teacher'
     },
     {
         id:4,

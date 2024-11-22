@@ -18,7 +18,7 @@ export const studentData = [
         mdy:'March 25, 2024',
         fName:'Ashfaq Ahmad',
         city:'Tibba',
-        grade:'VII A'
+        grade:'VII B'
     },
     {
         id:3,
@@ -28,7 +28,7 @@ export const studentData = [
         mdy:'March 25, 2024',
         fName:'Ashfaq Ahmad',
         city:'Tibba',
-        grade:'VII A'
+        grade:'VII C'
     },
     {
         id:4,
@@ -38,7 +38,7 @@ export const studentData = [
         mdy:'March 25, 2024',
         fName:'Ashfaq Ahmad',
         city:'Tibba',
-        grade:'VII A'
+        grade:'VII B'
     },
     {
         id:5,
@@ -58,7 +58,7 @@ export const studentData = [
         mdy:'March 25, 2024',
         fName:'Ashfaq Ahmad',
         city:'Tibba',
-        grade:'VII A'
+        grade:'VII C'
     },
     {
         id:7,
