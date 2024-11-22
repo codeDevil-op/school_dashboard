@@ -145,7 +145,7 @@ export default function Home() {
 
           {/* right bar  */}
           <div className="bg-white lg:w-[30%] shadow-xl lg:shadow-none px-4 py-8 rounded-3xl md:rounded-none space-y-6 flex flex-col w-[80%]">
-          <div className="p-2 hidden md:block">
+          <div className="px-6 hidden md:block">
             <UserProfile/>
           </div>
           <div>

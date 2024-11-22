@@ -36,7 +36,9 @@ const SideBar: React.FC = () => {
             <ul className='space-y-[2px]'>
                {
                 sideBarData.map((item)=>(
-                    <li key={item.id} className={pathName===item.href?'active':'p-3'}>
+                    <li key={item.id} className={pathName===item.href?'active':'p-3'}
+                    onClick={()=>setIsDrawerOpen(false)}
+                    >
                     <Link href={item.href} className='flex items-center'>
                     <Image src={item.img} alt='' height={20} width={20} 
                     className={pathName===item.href?'icon':'filter: brightness(0) saturate(100%) invert(74%) sepia(35%) saturate(265%) hue-rotate(207deg) brightness(101%) contrast(84%);'}
@@ -46,8 +48,7 @@ const SideBar: React.FC = () => {
                 </li>
                 ))
                }
-                
-                
+          
             </ul>
         </div>
     </section>
