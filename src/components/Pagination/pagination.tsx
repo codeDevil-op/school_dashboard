@@ -25,7 +25,7 @@ const Pagination: React.FC<paginationType> = ({currentPage,setCurrentPage,pageNu
             setCurrentPage(currentPage + 1);
           }
         // Shown next set of pageNumbers
-          if (currentPage + 2 > maxPageNumberLimit) {
+          if (currentPage + 1 > maxPageNumberLimit) {
             setMaxPageNumberLimit(maxPageNumberLimit + pageNumberLimit);
             setMinPageNumberLimit(minPageNumberLimit + pageNumberLimit);
           }
@@ -54,7 +54,7 @@ const Pagination: React.FC<paginationType> = ({currentPage,setCurrentPage,pageNu
                 </button>
             </li>
             {pageNumbers.map((number,index)=>{
-                if (number < maxPageNumberLimit+1 && number > minPageNumberLimit -2){
+                if (number < maxPageNumberLimit+1 && number > minPageNumberLimit-1){
                     return (
                         <li key={index}
                       onClick={() => paginate(number)}

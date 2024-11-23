@@ -3,9 +3,9 @@
 export const  financeData = [
     { id: 1, ide: 984950503, dmy: '19 December 2022, 10:00 PM', fee: 29695, status: 'Completed' },
     { id: 2, ide: 835492262, dmy: '01 August 2023, 02:57 PM', fee: 16515, status: 'Pending' },
-    { id: 3, ide: 963073558, dmy: '19 November 2023, 04:38 PM', fee: 64766, status: 'Pending' },
-    { id: 4, ide: 591815064, dmy: '04 February 2023, 06:46 AM', fee: 70528, status: 'Pending' },
-    { id: 5, ide: 645272535, dmy: '31 October 2023, 05:32 AM', fee: 43514, status: 'Pending' },
+    { id: 3, ide: 963073558, dmy: '19 November 2023, 04:38 PM', fee: 64766, status: 'Cancelled' },
+    { id: 4, ide: 591815064, dmy: '04 February 2023, 06:46 AM', fee: 70528, status: 'Completed' },
+    { id: 5, ide: 645272535, dmy: '31 October 2023, 05:32 AM', fee: 43514, status: 'Cancelled' },
     { id: 6, ide: 662259950, dmy: '20 June 2021, 05:35 PM', fee: 95301, status: 'Pending' },
     { id: 7, ide: 373858610, dmy: '18 July 2022, 07:28 PM', fee: 52110, status: 'Cancelled' },
     { id: 8, ide: 362335627, dmy: '11 July 2022, 10:36 AM', fee: 62461, status: 'Completed' },

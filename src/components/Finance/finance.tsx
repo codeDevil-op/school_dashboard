@@ -53,7 +53,11 @@ const Finance = () => {
                     {fee}$
                   </div>
                 </td>
-                <td className="px-4 py-4 text-lg text-[#A098AE]">{status}</td>
+                <td className={`px-4 py-4 text-lg text-[#A098AE]
+                ${status==='Completed'&& 'text-[#4CBC9A]'}
+                ${status==='Cancelled'&& 'text-[#FF4550]'}
+                `}
+                >{status}</td>
               </tr>
             ))}
           </tbody>
