@@ -1,9 +1,13 @@
+'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { FiPrinter } from 'react-icons/fi'
 import {studentData} from './studentData'
 import Pagination from '../Pagination/pagination'
-const UnpaidStudents = () => {
+interface headingType {
+    heading:string,
+}
+const UnpaidStudents: React.FC<headingType> = ({heading}) => {
 
     // pagination states 
     const [currentPage,setCurrentPage] = useState(1)
@@ -18,7 +22,6 @@ const UnpaidStudents = () => {
     for (let i = 1; i <= Math.ceil(studentData.length / studentsPerPage); i++) {
         pageNumbers.push(i);
       }
-      console.log(pageNumbers)
   return (
     <div>
         <div className="relative overflow-x-auto sm:rounded-lg">
@@ -35,26 +38,29 @@ const UnpaidStudents = () => {
         <h1 className="text-sm font-normal text-[#303972]">{name}</h1>
     </div>  
 </th>
-<td className="xl:px-6 px-10 py-4 text-[#303972] font-medium">
+<td className="xl:px-3 px-10 py-4 text-[#303972] font-medium">
    ID {ide}
 </td>
-<th scope="row" className="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+<th scope="row" className="flex items-center px-3 py-4 text-gray-900 whitespace-nowrap dark:text-white">
     <Image className="w-10 h-10 rounded-full" src={classlogo} alt="Jese image"/>
     <div className="ps-3">
         <div className="text-xs font-normal text-[#A098AE]">Class</div>
         <div className=" text-[#303972] font-semibold">{myclass}</div>
     </div>  
 </th>
-<td className="px-6 py-4">
+<td className="px-3 py-4">
     <div className="flex items-center text-[#303972] font-semibold">
     {fee}$
     </div>
 </td>
-<td className="px-6 py-4">
+{!heading?
+    <td className="px-3 py-4">
     <a href="#" className="font-medium cursor-pointer"><FiPrinter width={24} height={24}/>
     </a>
-</td>
-<td className="px-6 py-4 text-lg text-[#A098AE]">
+</td> :''
+}
+
+<td className="px-3 py-4 text-lg text-[#A098AE]">
     ...
 </td>
 </tr>
@@ -65,7 +71,7 @@ const UnpaidStudents = () => {
     </table>
 </div>
 {/* pagination  */}
-<div className='flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center text-[#363B64] text-sm font-normal'>
+<div className='flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center bg-white p-4 text-[#363B64] text-sm font-normal'>
     <h1>Showing {indexOfFirstStudent+1}-{indexOfLastStudent} from {studentData.length} data</h1>
     <div>
         <Pagination 

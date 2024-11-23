@@ -1,6 +1,6 @@
 import React from "react";
 import StudentTable from '../../components/Students/student';
-import Header from '../../components/Header/header'
+import Header from '../../components/Header/headerSec'
 const Page = ()=>{
     
 return(

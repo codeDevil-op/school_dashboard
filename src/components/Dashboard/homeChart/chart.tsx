@@ -1,7 +1,14 @@
+'use client'
 import React, { useEffect } from "react";
 import Chart, { ChartConfiguration } from "chart.js";
+import { MdArrowDropDown } from "react-icons/md";
 
-export default function CardLineChart() {
+interface chartData {
+  heading:string,
+  values:string,
+}
+
+const CardLineChart: React.FC<chartData> =({heading,values})=> {
   useEffect(() => {
     const config: ChartConfiguration = {
       type: "line",
@@ -112,10 +119,40 @@ export default function CardLineChart() {
       <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
         <div className="flex flex-wrap items-center">
           <div className="relative w-full max-w-full flex-grow flex-1 flex items-center justify-between">
-            <h6 className="text-[#303972] text-2xl font-bold">
-              School Performance
+            <h6 className="text-[#303972] text-sm md:text-2xl font-bold">
+              {heading}
             </h6>
-            <h2 className="text-[#303972] text-xl font-semibold">Sales value</h2>
+            {values?
+            <h2 className="text-[#303972] text-xl font-semibold">{values}</h2>:
+            <div className="flex space-x-0 md:space-x-5">
+
+              <div className="flex flex-col items-center">
+                <div className="flex justify-center items-center">
+                <div className="h-2 w-2 rounded-full border-2 border-yellow-500"></div>
+                <h1 className="text-xs text-[#A098AE] ps-2">Expenses</h1>
+                </div>
+                <p className="text-[#303972] font-semibold">1,245</p>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <div className="flex justify-center items-center">
+                <div className="h-2 w-2 rounded-full border-2 border-orange-500"></div>
+                <h1 className="text-xs text-[#A098AE] ps-2">Income</h1>
+                </div>
+                <p className="text-[#303972] font-semibold">1,356</p>
+              </div>
+              <div className="relative space-x-2">
+                <select className="px-10 py-2 text-lg text-[#4D44B5] rounded-full appearance-none outline-[#4d44b5] border border-[#4d44b5]">
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                </select>
+                <span>
+                <MdArrowDropDown className="text-[#4D44B5] absolute top-[10px] right-4" size={24}/>
+                </span>
+                </div>
+
+            </div>
+            }
           </div>
         </div>
       </div>
@@ -128,3 +165,5 @@ export default function CardLineChart() {
     </div>
   );
 }
+
+export default CardLineChart;

@@ -7,9 +7,9 @@ import setting from '../../../../public/icons/setting.png'
 
 const UserProfile = () => {
   return (
-    <div className='flex justify-between max-md:justify-evenly items-center w-60'>
-        <div className='relative flex justify-center items-center rounded-full p-2 bg-white w-11 h-11'>
-        <div className="h-2 w-2 rounded-full bg-[#4D44B5] absolute right-2 top-[2px]"></div> 
+    <div className='flex justify-between max-md:justify-evenly items-center md:w-[225px]'>
+        <div className='relative flex justify-center items-center rounded-full p-3 bg-white w-11 h-11'>
+        <div className="h-2 w-2 rounded-full bg-[#4D44B5] absolute right-2 top-[3px]"></div> 
         <Image src={notfication} alt=''/>
         </div>
         <div className='relative flex justify-center items-center rounded-full p-2 bg-white w-11 h-11'>

@@ -7,15 +7,15 @@ interface headingType  {
     heading:string
 }
 
-const Header: React.FC<headingType> = ({heading}) => {
+const Headersec: React.FC<headingType> = ({heading}) => {
   return (
     <>
      {/* upper */}
-     <div className="w-full flex items-center justify-between">
+     <div className="w-full flex flex-col md:flex-row space-y-2 md:space-y-0 items-center justify-between">
             <div>
             <h1 className="text-[#303972] text-3xl font-bold">{heading}</h1>
             </div>
-            <div className="">
+            <div className="bg-white p-3 rounded-lg md:bg-transparent md:p-0">
             <UserProfile/>
             </div>
         </div>
@@ -25,7 +25,7 @@ const Header: React.FC<headingType> = ({heading}) => {
                   <input
                     type="text"
                     placeholder="search here..."
-                    className=" p-2 max-md:p-4 outline-none ml-8 rounded-3xl text-[#A098AE] w-full lg:w-52"
+                    className="p-2 max-md:p-4 outline-none ml-8 rounded-3xl text-[#A098AE] w-full lg:w-52"
                   />
                   <IoSearchOutline
                     className="absolute top-3 max-md:top-4 max-md:left-4 left-3"
@@ -50,4 +50,4 @@ const Header: React.FC<headingType> = ({heading}) => {
   )
 }
 
-export default Header
+export default Headersec

@@ -1,5 +1,5 @@
 
-import Header from "../../components/Header/header";
+import Header from "../../components/Header/headerSec";
 import Teacher from '../../components/Teachers/teachers'
 const Page = () => {
   return (
