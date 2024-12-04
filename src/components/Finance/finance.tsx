@@ -53,7 +53,7 @@ const Finance = () => {
                     {fee}$
                   </div>
                 </td>
-                <td className={`px-4 py-4 text-lg text-[#A098AE]
+                <td className={`px-4 py-4 text-lg
                 ${status==='Completed'&& 'text-[#4CBC9A]'}
                 ${status==='Cancelled'&& 'text-[#FF4550]'}
                 `}
@@ -64,7 +64,7 @@ const Finance = () => {
         </table>
       </div>
       {/* pagination  */}
-      <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center bg-white p-4 text-[#363B64] text-sm font-normal">
+      <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center bg-white p-8 text-[#363B64] text-sm font-normal">
         <h1>
           Showing {indexOfFirstStudent + 1}-{indexOfLastStudent} from{" "}
           {financeData.length} data

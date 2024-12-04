@@ -5,6 +5,9 @@
 .sidebar-bg{
     background: linear-gradient(180deg, #252472 0%, #2321BD 100%)
 }
+.profile-bg{
+  background: linear-gradient(90deg, #252476 0%, #2521bb 100%)
+}
 body {
     font-family: 'Poppins', sans-serif;
   }

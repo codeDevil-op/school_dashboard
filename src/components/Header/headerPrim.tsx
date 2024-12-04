@@ -33,7 +33,8 @@ const HeaderPrim: React.FC<headingType> = ({heading}) => {
                   />
                 </div>
                 <div className={`bg-white md:bg-transparent p-3 rounded-3xl
-                ${heading==='Dashboard'?'hidden':'md:block hidden'}`}>
+                ${heading==='Dashboard'||'User Dashboard'?'hidden':'md:block hidden'}`
+                }>
                   <UserProfile/>
                 </div>
                 </div>
