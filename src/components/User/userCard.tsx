@@ -26,11 +26,11 @@ const UserCard: React.FC<cardType> = ({ heading }) => {
             </div>
           )}
         </div>
-        <div className="relative w-72 bg-white rounded-3xl shadow-sm border-[#A098AE] border-[1px]">
+        <div className="relative md:w-72 bg-white rounded-3xl shadow-sm border-[#A098AE] border-[1px]">
           <input
             type="text"
             placeholder="search here..."
-            className=" p-2 max-md:p-4 outline-none ml-8 rounded-3xl text-[#A098AE] max-w-full"
+            className=" p-2 max-md:p-4 outline-none ml-8 rounded-3xl text-[#A098AE] md:w-60"
           />
           <IoSearchOutline
             className="absolute top-3 max-md:top-5 max-md:left-4 left-3"

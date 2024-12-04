@@ -51,7 +51,7 @@ const Page = () => {
                         <p className="text-[#A098AE]">Jahanian, Pakistan</p>
                         </div>
                     </div>
-                    <div className="flex items-center space-x-2 md:space-x-4">
+                    <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 items-start md:items-center space-x-0 md:space-x-4">
 
                         <div className="space-y-2">
                             <h1 className="text-[#A098AE]">Phone</h1>
