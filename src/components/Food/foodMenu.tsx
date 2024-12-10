@@ -58,7 +58,7 @@ const FoodMenu = () => {
                 })
                 }  
             </ul>
-            <span className="absolute h-[2px] rounded-md w-[340px] bg-[#C1BBEB] right-1 top-[50] max-sm:hidden"></span>
+            <span className="absolute h-[2px] rounded-md w-[340px] bg-[#C1BBEB] right-1 top-[50] hidden sm:block"></span>
             <span className="absolute h-[2px] rounded-md w-[340px] bg-[#C1BBEB] left-2 bottom-[22px] sm:hidden"></span>
         </div>
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
