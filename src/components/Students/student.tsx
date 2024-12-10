@@ -82,7 +82,7 @@ const StudentTable = () => {
                 </td>
                 
                 <td className="px-4 py-4 text-[#303972] font-semibold flex items-center">
-                <Image src={stu.img} alt="" className='w-10 h-10 rounded-full'/>
+                <Image src={stu.img} alt="" className='w-10 h-10 rounded-full hidden md:block'/>
                     <div className="ps-3">
                         <div className="text-base font-semibold">{stu.name}</div>
                     </div>  

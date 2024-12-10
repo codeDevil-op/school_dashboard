@@ -14,7 +14,7 @@ const Page = () => {
       <section className="w-full ">
         <div className="flex md:flex-row flex-col max-md:items-center space-x-2">
           {/* left content  */}
-          <div className=" w-[100%] md:w-[70%] p-10">
+          <div className=" w-[100%] md:w-[70%] p-5 md:p-10">
             <div className="space-y-4 flex flex-col">
               <HeaderPrim heading="User Dashboard" />
               {/* main content  */}
@@ -29,7 +29,7 @@ const Page = () => {
                     <Image
                       src={redRec}
                       alt=""
-                      className="w-64 -z-20 absolute right-20 bottom-0"
+                      className="w-64 -z-20 absolute sm:right-20 right-12 bottom-0"
                     />
                     <div className="">
                       <Image
@@ -96,7 +96,7 @@ const Page = () => {
           </div>
 
           {/* right bar  */}
-          <div className="bg-white lg:w-[30%] shadow-xl lg:shadow-none px-4 py-8 rounded-3xl md:rounded-none space-y-6 flex flex-col w-[80%]">
+          <div className="bg-white lg:w-[30%] shadow-xl lg:shadow-none px-4 md:py-8 py-0 rounded-3xl md:rounded-none space-y-6 flex flex-col w-[80%]">
             <div className="px-6 hidden md:block">
               <UserProfile />
             </div>

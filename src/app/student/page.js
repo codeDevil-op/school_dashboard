@@ -6,7 +6,7 @@ const Page = ()=>{
 return(
     <>
     <section className="w-full">
-        <div className="flex flex-col space-y-4 p-10">
+        <div className="flex flex-col space-y-4 p-5 md:p-10">
        <Header
        heading = 'Student'
        />
